@@ -1,0 +1,75 @@
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+}
+.cardlist__row {
+}
+
+.cardlist__cards {
+}
+.card-wrapper {
+  margin-bottom: 8px;
+}
+.card {
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+.card__content {
+  padding: 8px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+}
+.modal_content {
+  padding: 8px;
+  min-width: 400px;
+  min-height: 400px;
+}
+.edit__input {
+  display: block;
+  width: 100%;
+  padding: 4px 8px;
+  margin: 4px 0;
+}
+.input-label {
+  display: block;
+}
+
+.table {
+  width: 100%;
+}
+.table td {
+  text-align: center;
+}
+.table tr:nth-child(2n + 1) {
+  background-color: #f2f3f4;
+}
+.section {
+  background-color: #f2f3f4;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.filters-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardList__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
