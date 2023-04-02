@@ -1,6 +1,5 @@
 import React, { ChangeEvent, FC, useContext, useEffect, useState } from "react";
 import { MovieContext } from "./CardList";
-import { useModal } from "../../../shared/hooks/useModal";
 interface IFilterProps {}
 
 export const Filters: FC<IFilterProps> = () => {
@@ -9,7 +8,6 @@ export const Filters: FC<IFilterProps> = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
   };
-  const { openPopupWithContent, isModalVisible } = useModal();
   useEffect(() => {
     if (setMovies) {
       if (value.length === 0) {
@@ -18,7 +16,6 @@ export const Filters: FC<IFilterProps> = () => {
       } else {
         setMovies(
           movies.filter((movie) => {
-            console.log("movie.title.startsWith(value) = ", movie.title.startsWith(value), " ", value);
             return movie.title.startsWith(value);
           })
         );
@@ -34,7 +31,7 @@ export const Filters: FC<IFilterProps> = () => {
           <input value={value} onChange={handleChange} />
         </div>
         <div>
-          <button onClick={() => {}}>Еще фильтры</button>
+          <button onClick={() => {}}>Другие фильтры мы не сделали</button>
         </div>
       </div>
     </section>
